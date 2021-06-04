@@ -1,0 +1,13 @@
+.header{
+    text-align: center;
+    background-color: purple;
+    padding-bottom: 5px;
+    
+}
+.card{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#input{
+    padding-bottom: 10px;
+}

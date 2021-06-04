@@ -6,10 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="display-3">Weather Dashboard</h1>
+        <p class="lead">Please select a city</p>
+          <p id="currentDay" class="lead"></p>
+      </header>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <label for="city">Select a city:</label>
+          <input type="text" id="fname" name="city"><br><br>
+          <input type="submit" value="Submit" onclick="search()">
+              <!--add stuff here-->
+
+
+
+        </div>
+      </div>
 
 
 
