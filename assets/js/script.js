@@ -1,7 +1,8 @@
-var urlWeather = 'https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=64d2e1dc27161dd62df3dc524d4db2bd'
-//http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=60.99&lon=30.9&dt=1586468027&appid={API key}
-var inputedCity = document.querySelector('input');
 
+  function search(){
+    var inputedCity = document.getElementById("cityName").value;
+    console.log("City is = " + inputedCity)
+    
 fetch('https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=64d2e1dc27161dd62df3dc524d4db2bd', 
 {
   method: 'GET', //GET is the default.
@@ -13,9 +14,5 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=64d2e1dc
   })
   .then(function (data) {
     console.log(data);
-    console.log(data.city.name);
   });
-
-  function search(){
-    console.log("City is = " + inputedCity)
   }
