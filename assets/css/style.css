@@ -5,8 +5,16 @@
     
 }
 .card{
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    float: left;
+}
+#textarea{
+    float: left;
+    margin: 20px;
+    width: 780px;
+    height: 180px;
+    border-style: solid;
 }
 #input{
     padding-bottom: 10px;
