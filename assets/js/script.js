@@ -14,16 +14,27 @@ fetch(newUrl,
   })
   .then(function (data) {
     console.log(data);
+    placeAndDate(data);
+    weatherDetails(data)
+  });
+  }
+
+function placeAndDate(data){
     var today = new Date();
     var date = ' (' + (today.getMonth()+1) + '-' + today.getDate() + '-' + today.getFullYear() + ')';
-    var x = document.createElement("HEADER");
-    x.setAttribute("id", "myHeader");
-    document.body.appendChild(x);
-    var y = document.createElement("H3"); 
+    var y = document.createElement("H2"); 
+    //var iconCode1 = data.weather[0].icon;
+    //var iconCode2 = "http://openweathermap.org/img/w/" + iconCode1 + ".png";
+    
     var t = document.createTextNode(data.name + date);
     y.appendChild(t);
     document.getElementById("textarea").appendChild(y);
-  });
-  }
+}
+function weatherDetails(data){
+    var y = document.createElement("LI"); 
+    var t = document.createTextNode(data.main.temp);
+    y.appendChild(t);
+    document.getElementById("textarea").appendChild(y);
+}
 
 
