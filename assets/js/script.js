@@ -27,6 +27,22 @@ fetch(newUrl,
     future1t(data);
     future1ws(data);
     future1h(data);
+
+    future2t(data);
+    future2ws(data);
+    future2h(data);
+
+    future3t(data);
+    future3ws(data);
+    future3h(data);
+
+    future4t(data);
+    future4ws(data);
+    future4h(data);
+
+    future5t(data);
+    future5ws(data);
+    future5h(data);
   });
   }
 
@@ -117,6 +133,80 @@ function future1h(data){
   var t = document.createTextNode("Humidity: " + data.main.humidity + "%");
   y.appendChild(t);
   document.getElementById("futureWeather1").appendChild(y);
+}
+
+function future2t(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Temperature: " + data.main.temp + "°F");
+  y.appendChild(t);
+  document.getElementById("futureWeather2").appendChild(y);
+}
+function future2ws(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Wind Speed: " + data.wind.speed + "MPH");
+  y.appendChild(t);
+  document.getElementById("futureWeather2").appendChild(y);
+}
+function future2h(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Humidity: " + data.main.humidity + "%");
+  y.appendChild(t);
+  document.getElementById("futureWeather2").appendChild(y);
+}
+
+function future3t(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Temperature: " + data.main.temp + "°F");
+  y.appendChild(t);
+  document.getElementById("futureWeather3").appendChild(y);
+}
+function future3ws(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Wind Speed: " + data.wind.speed + "MPH");
+  y.appendChild(t);
+  document.getElementById("futureWeather3").appendChild(y);
+}
+function future3h(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Humidity: " + data.main.humidity + "%");
+  y.appendChild(t);
+  document.getElementById("futureWeather3").appendChild(y);
+}
+function future4t(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Temperature: " + data.main.temp + "°F");
+  y.appendChild(t);
+  document.getElementById("futureWeather4").appendChild(y);
+}
+function future4ws(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Wind Speed: " + data.wind.speed + "MPH");
+  y.appendChild(t);
+  document.getElementById("futureWeather4").appendChild(y);
+}
+function future4h(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Humidity: " + data.main.humidity + "%");
+  y.appendChild(t);
+  document.getElementById("futureWeather4").appendChild(y);
+}
+function future5t(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Temperature: " + data.main.temp + "°F");
+  y.appendChild(t);
+  document.getElementById("futureWeather5").appendChild(y);
+}
+function future5ws(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Wind Speed: " + data.wind.speed + "MPH");
+  y.appendChild(t);
+  document.getElementById("futureWeather5").appendChild(y);
+}
+function future5h(data){
+  var y = document.createElement("LI"); 
+  var t = document.createTextNode("Humidity: " + data.main.humidity + "%");
+  y.appendChild(t);
+  document.getElementById("futureWeather5").appendChild(y);
 }
 
 
