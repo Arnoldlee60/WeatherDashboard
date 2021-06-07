@@ -101,7 +101,7 @@ function placeAndDatef1(data){
   y.appendChild(t);
   document.getElementById("futureWeather1").appendChild(y);
 
-  var iconcode = data.current.weather[0].icon;
+  var iconcode = data.daily[0].weather[0].icon;
   var iconurl = document.createElement("img"); 
   iconurl.src = "http://openweathermap.org/img/w/" + iconcode + ".png";
   var src = document.getElementById("futureWeather1"); 
@@ -115,7 +115,7 @@ function placeAndDatef2(data){
   y.appendChild(t);
   document.getElementById("futureWeather2").appendChild(y);
 
-  var iconcode = data.current.weather[0].icon;
+  var iconcode = data.daily[1].weather[0].icon;
   var iconurl = document.createElement("img"); 
   iconurl.src = "http://openweathermap.org/img/w/" + iconcode + ".png";
   var src = document.getElementById("futureWeather2"); 
@@ -129,7 +129,7 @@ function placeAndDatef3(data){
   y.appendChild(t);
   document.getElementById("futureWeather3").appendChild(y);
 
-  var iconcode = data.current.weather[0].icon;
+  var iconcode = data.daily[2].weather[0].icon;
   var iconurl = document.createElement("img"); 
   iconurl.src = "http://openweathermap.org/img/w/" + iconcode + ".png";
   var src = document.getElementById("futureWeather3"); 
@@ -143,7 +143,7 @@ function placeAndDatef4(data){
   y.appendChild(t);
   document.getElementById("futureWeather4").appendChild(y);
 
-  var iconcode = data.current.weather[0].icon;
+  var iconcode = data.daily[3].weather[0].icon;
   var iconurl = document.createElement("img"); 
   iconurl.src = "http://openweathermap.org/img/w/" + iconcode + ".png";
   var src = document.getElementById("futureWeather4"); 
@@ -157,7 +157,7 @@ function placeAndDatef5(data){
   y.appendChild(t);
   document.getElementById("futureWeather5").appendChild(y);
 
-  var iconcode = data.current.weather[0].icon;
+  var iconcode = data.daily[4].weather[0].icon;
   var iconurl = document.createElement("img"); 
   iconurl.src = "http://openweathermap.org/img/w/" + iconcode + ".png";
   var src = document.getElementById("futureWeather5"); 
