@@ -17,21 +17,34 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
+
+  <header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand">Weather Dashboard</a>
+  </nav>
+  </header>
+
+    <!-- <header class="header">
         <h1 class="display-3">Weather Dashboard</h1>
         <p class="lead">Please select a city</p>
           <p id="currentDay" class="lead"></p>
-      </header>
+      </header> -->
 
       <div>
-    <div class="card" style="width: 18rem;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Enter a city:</div>
+          <div class="card-body">
+            <h5 class="card-title">Dark card title</h5>
+            <input type="text" id="cityName" name="city"><br><br>
+            <input type="submit" value="Submit" onclick="search()">
+          </div>
+    <!-- <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <label for="city">Select a city:</label>
           <input type="text" id="cityName" name="city"><br><br>
           <input type="submit" value="Submit" onclick="search()">
-              <!--add stuff here-->
-        </div>
+        </div> -->
       </div>
     </div>
       <div id="textarea"></div>
